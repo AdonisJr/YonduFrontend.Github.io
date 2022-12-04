@@ -1,0 +1,210 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.home {
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home main {
+  width: 30%;
+  height: 100%;
+}
+
+.home main .displayResult {
+  font-size: xx-large;
+  width: 100%;
+  text-align: right;
+  background-color: #d6dbdb;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+  padding: 10px;
+}
+
+.home main .calculatorButtons {
+  font-size: large;
+  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+          box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.6);
+  height: 50%;
+  background-color: gray;
+}
+
+.home main .calculatorButtons .container {
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  gap: 1px;
+      grid-template-areas: 'reset negativePositive percent division' 'seven eight nine multiplication' 'four five six subtraction' 'one two three addition' 'zero zero period equals';
+}
+
+.home main .calculatorButtons .container label:hover {
+  cursor: pointer;
+}
+
+.home main .calculatorButtons .container #buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home main .calculatorButtons .container #buttons:hover {
+  cursor: pointer;
+  background-color: beige;
+}
+
+.home main .calculatorButtons .container .reset {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: reset;
+  background-color: white;
+}
+
+.home main .calculatorButtons .container .negativePositive {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: negativePositive;
+  background-color: white;
+}
+
+.home main .calculatorButtons .container .percent {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: percent;
+  background-color: white;
+}
+
+.home main .calculatorButtons .container .division {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: division;
+  background-color: #ec9c25;
+}
+
+.home main .calculatorButtons .container .seven {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: seven;
+  background-color: white;
+}
+
+.home main .calculatorButtons .container .eight {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: eight;
+  background-color: white;
+}
+
+.home main .calculatorButtons .container .nine {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: nine;
+  background-color: white;
+}
+
+.home main .calculatorButtons .container .multiplication {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: multiplication;
+  background-color: #ec9c25;
+}
+
+.home main .calculatorButtons .container .four {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: four;
+  background-color: white;
+}
+
+.home main .calculatorButtons .container .five {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: five;
+  background-color: white;
+}
+
+.home main .calculatorButtons .container .six {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: six;
+  background-color: white;
+}
+
+.home main .calculatorButtons .container .subtraction {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: subtraction;
+  background-color: #ec9c25;
+}
+
+.home main .calculatorButtons .container .one {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: one;
+  background-color: white;
+}
+
+.home main .calculatorButtons .container .two {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: two;
+  background-color: white;
+}
+
+.home main .calculatorButtons .container .three {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: three;
+  background-color: white;
+}
+
+.home main .calculatorButtons .container .addition {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: addition;
+  background-color: #ec9c25;
+}
+
+.home main .calculatorButtons .container .zero {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: zero;
+  background-color: white;
+}
+
+.home main .calculatorButtons .container .period {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: period;
+  background-color: white;
+}
+
+.home main .calculatorButtons .container .equals {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: equals;
+  background-color: #ec9c25;
+}

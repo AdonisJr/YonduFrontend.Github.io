@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    main {
+        width: 30%;
+        height: 100%;
+        .displayResult {
+            font-size: xx-large;
+            width: 100%;
+            text-align: right;
+            background-color: rgb(214, 219, 219);
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .6);
+            padding: 10px;
+        }
+        .calculatorButtons {
+            font-size: large;
+            font-weight: 500;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .6);
+            height: 50%;
+            background-color: gray;
+            .container {
+                height: 100%;
+                display: grid;
+                gap: 1px;
+                grid-template-areas: 'reset negativePositive percent division' 'seven eight nine multiplication' 'four five six subtraction' 'one two three addition' 'zero zero period equals';
+                label {
+                    &:hover {
+                        cursor: pointer;
+                    }
+                }
+                #buttons {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    &:hover {
+                        cursor: pointer;
+                        background-color: beige;
+                    }
+                }
+                .reset {
+                    grid-area: reset;
+                    background-color: white;
+                }
+                .negativePositive {
+                    grid-area: negativePositive;
+                    background-color: white;
+                }
+                .percent {
+                    grid-area: percent;
+                    background-color: white;
+                }
+                .division {
+                    grid-area: division;
+                    background-color: rgb(236, 156, 37);
+                }
+                .seven {
+                    grid-area: seven;
+                    background-color: white;
+                }
+                .eight {
+                    grid-area: eight;
+                    background-color: white;
+                }
+                .nine {
+                    grid-area: nine;
+                    background-color: white;
+                }
+                .multiplication {
+                    grid-area: multiplication;
+                    background-color: rgb(236, 156, 37);
+                }
+                .four {
+                    grid-area: four;
+                    background-color: white;
+                }
+                .five {
+                    grid-area: five;
+                    background-color: white;
+                }
+                .six {
+                    grid-area: six;
+                    background-color: white;
+                }
+                .subtraction {
+                    grid-area: subtraction;
+                    background-color: rgb(236, 156, 37);
+                }
+                .one {
+                    grid-area: one;
+                    background-color: white;
+                }
+                .two {
+                    grid-area: two;
+                    background-color: white;
+                }
+                .three {
+                    grid-area: three;
+                    background-color: white;
+                }
+                .addition {
+                    grid-area: addition;
+                    background-color: rgb(236, 156, 37);
+                }
+                .zero {
+                    grid-area: zero;
+                    background-color: white;
+                }
+                .period {
+                    grid-area: period;
+                    background-color: white;
+                }
+                .equals {
+                    grid-area: equals;
+                    background-color: rgb(236, 156, 37);
+                }
+            }
+        }
+    }
+}
